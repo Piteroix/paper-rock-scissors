@@ -1,0 +1,37 @@
+<h1>{{title}}</h1>
+<br />
+<h2>Try your best against the computer! May the better player win!</h2>
+<br />
+<h1>Player score:  {{playerPoints}}    Computer score:  {{computerPoints}}</h1>
+<div class="buttons-container">
+    <div class="special-buttons">
+        <button class="paper" (click)="playerChoice=0 ; startGame()">Paper</button>
+        <button class="rock" (click)="playerChoice=1 ; startGame()">Rock</button>
+        <button class="scissors" (click)="playerChoice=2 ;startGame()">Scissors</button>
+    </div>
+</div>
+<br />
+<ng-container *ngIf="result !== 0">
+    <h3>Computer's choice in previous round:
+        <ng-container *ngIf="computerChoice===0"> Paper
+        </ng-container>
+        <ng-container *ngIf="computerChoice===1"> Rock
+        </ng-container>
+        <ng-container *ngIf="computerChoice===2"> Scissors
+        </ng-container>
+    </h3>
+</ng-container>
+<ng-container *ngIf="result===1">
+    <h1> You won this round!</h1>
+</ng-container>
+<ng-container *ngIf="result===2">
+    <h1> Computer won this round!</h1>
+</ng-container>
+<ng-container *ngIf="result===3">
+    <h1> It's draw!</h1>
+</ng-container>
+<div class="buttons-container">
+    <div class="special-buttons">
+        <button (click)="reset()">Reset</button>
+    </div>
+</div>

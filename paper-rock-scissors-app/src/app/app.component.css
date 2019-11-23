@@ -1,0 +1,34 @@
+.buttons-container button {
+    background-color: #3346b5;
+    border: 0px;
+    color: white;
+    font-size: 40px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 25px;
+    display: inline-flex;
+    margin-top: 40px;
+}
+
+.special-buttons {
+    text-align: center;
+}
+.buttons-container button:hover {
+    background-color: #667aed;
+    cursor: pointer;
+    padding: 8px 23px 8px 23px;
+    font-size: 45px;
+}
+
+.buttons-container .paper {
+    background-color: #949c06;
+    margin-right: 40px;
+}
+
+.buttons-container .rock {
+    margin-right: 40px;
+    background-color: #5c4610;
+}
+
+.buttons-container .scissors {
+    background-color: #649c69;
+}
