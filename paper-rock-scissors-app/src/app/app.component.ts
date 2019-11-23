@@ -26,14 +26,6 @@ export class AppComponent {
   public startGame() {
     this.generateComputerChoice();
     this.checkWinner();
-    switch (this.result) {
-      case Result.Win:
-        break;
-      case Result.Lose:
-        break;
-      case Result.Draw:
-        break;
-    }
   }
 
   public checkWinner(): void {
